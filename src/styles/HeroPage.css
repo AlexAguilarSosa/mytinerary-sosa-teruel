@@ -1,0 +1,37 @@
+.HeroContain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://w0.peakpx.com/wallpaper/893/880/HD-wallpaper-dark-road-through-woods-amazing-natural-scenery.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.HeroH1{
+    font-size: 5rem;
+    color: white;
+    text-shadow: 5px -5px 1px black;
+    margin: 0;
+}
+
+.HeroH3{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 3px -3px 1px black;
+}
+
+.HeroButton{
+    cursor: pointer;
+    box-shadow: 2px -3px 1px black;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.HeroButton:hover{
+    background-color: black;
+    color: white;
+}
