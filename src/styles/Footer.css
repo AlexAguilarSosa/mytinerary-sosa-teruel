@@ -1,0 +1,31 @@
+.FooterContainer{
+    margin: 0;
+    width: auto;
+    min-height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FooterP{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.FooterImg{
+    width: 15vh;
+    height: 15vh;
+    margin: 5vh 25vh;
+}
+
+.Ig{
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.Face{
+    background-color: #fff;
+    border-radius: 360px;
+}
