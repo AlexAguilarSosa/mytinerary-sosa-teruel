@@ -1,11 +1,13 @@
-import Footer from './components/Footer';
-import HeroPage from './pages/HeroPage';
+import CarouselEvents from './components/CarouselEvents';
+// import Footer from './components/Footer';
+// import HeroPage from './pages/HeroPage';
 
 function App() {
   return (
   <div>
-    <HeroPage />
-    <Footer />
+    {/* <HeroPage />
+    <Footer /> */}
+    <CarouselEvents />
   </div>
     );
 }
