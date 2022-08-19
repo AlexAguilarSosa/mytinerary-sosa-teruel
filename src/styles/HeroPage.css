@@ -18,7 +18,7 @@
 }
 
 .HeroH3{
-    font-size: 2rem;
+    font-size: 3em;
     color: white;
     text-shadow: 3px -3px 1px black;
 }
@@ -27,11 +27,41 @@
     cursor: pointer;
     box-shadow: 2px -3px 1px black;
     font-size: 1.5rem;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
 }
 
 .HeroButton:hover{
     background-color: black;
     color: white;
+}
+
+@media (max-width: 768px){
+    .HeroH1{
+        font-size: 3rem;
+    }
+
+    .HeroH3{
+        font-size: 1.5rem;
+    }
+
+    .HeroButton{
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px){
+    .HeroH1{
+        font-size: 2.2rem;
+    }
+
+    .HeroH3{
+        font-size: 1.2rem;
+    }
+
+    .HeroButton{
+        font-size: 1rem;
+        padding: 10px;
+    }
 }
