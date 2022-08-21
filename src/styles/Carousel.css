@@ -1,4 +1,23 @@
 .cityImg{
-    width: 50vh;
-    height: auto;
+    width: 30vw;
+    height: 30vh;
+}
+
+.Carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+}
+
+.PCity{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px){
+    .cityImg{
+        object-fit:cover;
+    }
 }
