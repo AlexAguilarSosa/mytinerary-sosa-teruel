@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .FooterContainer{
     margin: 0;
     width: auto;
-    min-height: 20vh;
-    background-color: black;
+    min-height: 15vh;
+    background-color: #222831;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,40 +18,31 @@
     flex-wrap: wrap;
 }
 
-.FooterP{
-    color: #fff;
-    font-size: 2rem;
+.FooterText{
+    background-color: #393E46;
+    color: #EEEEEE;
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 360px;
+    padding: 3px;
 }
 
 .FooterImg{
-    width: 6vw;
-    height: 10vh;
-    margin-right: 30px;
-    margin-left: 30px;
-}
-
-.Ig{
-    background-color: #fff;
-    border-radius: 25px;
-}
-
-.Face{
-    background-color: #fff;
+    width: 4vw;
+    background-color: #393E46;
     border-radius: 360px;
+    padding: 3px;
+    margin: 0 15px;
 }
 
 @media (max-width: 768px){
-    .FooterP{
+    .FooterText{
         font-size: 1.3rem;
     }
 
     .FooterImg{
         width: 9vw;
         height: 8vh;
-    }
-
-    .Ig{
-        border-radius: 15px;
     }
 }
 
@@ -52,23 +51,15 @@
         width: 13vw;
         height: 6vh;
     }
-
-    .Ig{
-        border-radius: 10px;
-    }
 }
 
 @media (max-width: 320px){
     
-    .FooterP{
+    .FooterText{
         font-size: 1.1rem;
     }
     .FooterImg{
         width: 13vw;
         height: 5vh;
-    }
-
-    .Ig{
-        border-radius: 10px;
     }
 }
