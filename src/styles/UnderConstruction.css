@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.UnderContainer{
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, #393E468c 0%, #393E468c 100%), url("/public/img/underConstruction.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.UnderText, .UnderSubtitle{
+    font-family: 'Poppins', sans-serif;
+    color: #EEEEEE;
+    text-shadow: 3px -3px 1px #222831;
+}
+
+.UnderText{
+    font-size: 3rem;
+    padding: 0 0 10px 0;
+}
+
+.UnderSubtitle{
+    font-size: 4rem;
+}
