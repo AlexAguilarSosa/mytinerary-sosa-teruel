@@ -8,18 +8,18 @@ export default function Carousel(props) {
     const end = start + range
 
     const cityView = (city) =>(
-        <div className='city'>
-            <img className='cityImg' src={city.img} alt="" />
-            <p className='PCity'>{city.city}</p>
+        <div className='CarouselEvent'>
+            <p className='CarouselText'>{city.city}</p>
+            <img className='CarouselImg' src={city.img} alt="" />
         </div>
     )
 
     return (
-        <>
-            <h2>Popular MyTineraries</h2>
-            <div className='Carousel'>
+        <div className='CarouselContainer'>
+            <h2 className='CarouselTitle'>Popular MyTineraries</h2>
+            <div className='CarouselSlide'>
                 {cities.slice(start, end).map(cityView)}
             </div>
-        </>
+        </div>
     )
 }
