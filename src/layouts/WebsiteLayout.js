@@ -1,8 +1,11 @@
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 
-function WebsiteLayout() {
+function WebsiteLayout(props) {
     return (
         <div>
+            <Header />
+            { props.children }
             <Footer />
         </div>
     )
