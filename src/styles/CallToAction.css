@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.CallH3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #EEEEEE;
+    text-shadow: 2px -2px 1px #222831;
+}
+
+.CallButton{
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEEEE;
+    color: #222831;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 2px -3px 1px #222831;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.CallButton:hover{
+    background-color: #222831;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .CallH3{
+    font-size: 1.5rem;
+    }
+
+    .CallButton{
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px){
+    .CallH3{
+        font-size: 1.2rem;
+    }
+
+    .CallButton{
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
