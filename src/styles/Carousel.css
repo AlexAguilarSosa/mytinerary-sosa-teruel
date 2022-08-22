@@ -1,23 +1,51 @@
-.cityImg{
-    width: 30vw;
-    height: 30vh;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.Carousel{
+.CarouselContainer{
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.CarouselSlide{
+    width: 90vw;
+    height: calc(100vh - 1.5rem);
+    background-color: #EEEEEE;
+    display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+}
+
+.CarouselText, .CarouselTitle{
+    font-family: 'Poppins', sans-serif;
+    color: #00ADB5;
+    background-color: #393E46;
+    width: 100%;
     text-align: center;
+    margin: 0;
+    padding: 2px;
+    font-size: 2rem;
+    text-shadow: 3px -3px 1px #222831;
 }
 
-.PCity{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+.CarouselEvent{
+    background-color: #EEEEEE;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    margin-bottom: 25px;
 }
 
-@media (max-width: 768px){
-    .cityImg{
-        object-fit:cover;
-    }
+.CarouselImg{
+    object-fit: cover;
+    height: calc(100% - 1.5rem);
+    width: 100%;
+    margin: 0;
 }
