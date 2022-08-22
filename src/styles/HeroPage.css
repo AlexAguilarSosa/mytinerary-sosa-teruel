@@ -1,73 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 .HeroContain {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-3155666.jpg&fm=jpg);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-3155666.jpg&fm=jpg);
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
 }
 
 .HeroH1{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Bungee Inline', cursive;
+    font-weight: 400;
     font-size: 5rem;
-    color: white;
-    text-shadow: 3px -3px 1px black;
+    color: #EEEEEE;
+    text-shadow: 3px -3px 1px #222831;
     margin: 0;
-}
-
-.HeroH3{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5rem;
-    color: white;
-    text-shadow: 2px -2px 1px black;
-}
-
-.HeroButton{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    box-shadow: 2px -3px 1px black;
-    font-size: 1.5rem;
-    padding: 15px;
-    border-radius: 15px;
-}
-
-.HeroButton:hover{
-    background-color: black;
-    color: white;
 }
 
 @media (max-width: 768px){
     .HeroH1{
-        font-size: 3rem;
-    }
-
-    .HeroH3{
-        font-size: 1.5rem;
-    }
-
-    .HeroButton{
-        font-size: 1.1rem;
-        padding: 10px;
+        font-size: 2.7rem;
     }
 }
 
 @media (max-width: 320px){
     .HeroH1{
         font-size: 2.2rem;
-    }
-
-    .HeroH3{
-        font-size: 1.2rem;
-    }
-
-    .HeroButton{
-        font-size: 1rem;
-        padding: 10px;
     }
 }
