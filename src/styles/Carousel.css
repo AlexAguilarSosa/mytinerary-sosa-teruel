@@ -20,6 +20,7 @@
     height: calc(100vh - 1.5rem);
     background-color: #EEEEEE;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -48,4 +49,25 @@
     height: calc(100% - 1.5rem);
     width: 100%;
     margin: 0;
+}
+
+.Arrow-button{
+    padding: 1rem;
+    height: 10%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #393E46;
+    color: white;
+    font-weight: 900;
+}
+
+.CarouselContainerImg{
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
