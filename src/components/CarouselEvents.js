@@ -17,6 +17,6 @@ export default function CarouselEvents() {
         { img: "/img/capeTown.jpg", city: "Cape Town" }
     ]
     return (
-        <Carousel data={cities} range={4} />
+        <Carousel data={cities} range={4} interval={3}/>
     )
 }
