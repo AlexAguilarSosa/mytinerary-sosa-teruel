@@ -15,6 +15,8 @@ export default function Footer() {
         })
     }
 
+    let fecha = new Date()
+
     return (
             <div className='FooterContainer'>
                 <div className='FooterTop'>
@@ -29,7 +31,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div>
-                    <p className='FooterText'>MyTinerary Sosa-Teruel || Cohort-32</p>
+                    <p className='FooterText'>All rights reserved Sosa-Teruel {fecha.getFullYear()}</p>
                 </div>
                 <button onClick={ButtonToTop} className='FooterButton'><img src="/svg/upArrow.svg" alt="" /></button>
             </div>

@@ -84,6 +84,12 @@
     .FooterImg{
         width: 5vw;
     }
+
+    .FooterButton{
+        left: 90%;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 
@@ -104,5 +110,11 @@
 
     .FooterImg{
         width: 10vw;
+    }
+
+    .FooterButton{
+        left: 85%;
+        width: 40px;
+        height: 40px;
     }
 }
