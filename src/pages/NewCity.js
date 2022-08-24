@@ -1,10 +1,13 @@
-import UnderConstruction from '../components/UnderConstruction.js'
+import '../styles/NewCity.css'
 
 function newCity (){
     return(
-        <>
-            <UnderConstruction />
-        </>
+            <div className="newCityContainer">
+                <h1>New City</h1>
+                <div className="mainNewCity">
+
+                </div>
+            </div>
     )
 }
 

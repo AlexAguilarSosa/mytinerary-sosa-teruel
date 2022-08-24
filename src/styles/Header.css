@@ -1,5 +1,5 @@
 .HeaderContainer{
-    height: 10vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,9 +20,60 @@
 }
 
 .LogoImg{
-    height: 100%;
+    height: 10vh;
 }
 
 .UserImg{
-    height: 60%;
+    height: 7vh;
+}
+
+.ImgP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+    height: 10vh;
+}
+
+.TextDecorationBurger{
+    display: none;
+}
+
+.imgPConteiner{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+@media (max-width: 768px){
+    .TextDecorationBurger{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        border: none;
+    }
+    .menuLinks{
+        padding: 1rem;
+        margin: 1rem;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .HeaderNav{
+        display: none;
+    }
+    
+    .HeaderContainer{
+        align-items: flex-start;
+    }
+
+    .ImgP{
+        display: none;
+    }
 }
