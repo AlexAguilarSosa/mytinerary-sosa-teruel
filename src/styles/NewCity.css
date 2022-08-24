@@ -1,7 +1,14 @@
 .newCityContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .mainNewCity{
-    height: 71vh;
+    height: 83vh;
+}
+
+.NewCityH1{
+    font-family: 'Poppins', sans-serif, cursive;
 }
