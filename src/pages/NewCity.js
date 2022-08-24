@@ -1,6 +1,13 @@
+import '../styles/NewCity.css'
+
 function newCity (){
     return(
-            <h1>New City</h1>
+            <div className="newCityContainer">
+                <h1>New City</h1>
+                <div className="mainNewCity">
+
+                </div>
+            </div>
     )
 }
 
