@@ -4,10 +4,12 @@ import HeroPage from './pages/HeroPage';
 import Cities from './pages/Cities';
 import NewCity from './pages/NewCity';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import ScrollToTop from './components/ScrollTop';
 
 function App() {
   return (
   <BrowserRouter>
+    <ScrollToTop />
     <WebsiteLayout>
       <Routes>
           <Route path='/' element={<HeroPage />} />
