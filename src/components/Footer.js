@@ -8,6 +8,13 @@ export default function Footer() {
         {name: 'New City', to: '/newcity'},
     ]
 
+    const ButtonToTop = () =>{
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     return (
             <div className='FooterContainer'>
                 <div className='FooterTop'>
@@ -24,6 +31,7 @@ export default function Footer() {
                 <div>
                     <p className='FooterText'>MyTinerary Sosa-Teruel || Cohort-32</p>
                 </div>
+                <button onClick={ButtonToTop} className='FooterButton'><img src="/svg/upArrow.svg" alt="" /></button>
             </div>
     )
 }
