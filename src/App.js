@@ -1,17 +1,22 @@
-import CarouselEvents from './components/CarouselEvents';
 import UnderConstruction from './components/UnderConstruction';
 import WebsiteLayout from './layouts/WebsiteLayout';
 import HeroPage from './pages/HeroPage';
+import Cities from './pages/Cities';
+import NewCity from './pages/NewCity';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
-  <div>
+  <BrowserRouter>
     <WebsiteLayout>
-      <HeroPage />
-      <CarouselEvents />
-      <UnderConstruction />
+      <Routes>
+          <Route path='/' element={<HeroPage />} />
+          <Route path='/*' element={<UnderConstruction />} />
+          <Route path='/cities' element={<Cities />} />
+          <Route path='/newcity' element={<NewCity />} />
+      </Routes>
     </WebsiteLayout>
-  </div>
+  </BrowserRouter>
     );
 }
 
