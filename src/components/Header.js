@@ -33,7 +33,7 @@ function Header() {
         }
       </div>
       </button>
-      <img src='https://simg.nicepng.com/png/small/212-2121737_vinilo-decorativo-palmera-palm-tree-in-the-sunset.png' alt='logo' className='LogoImg'/>
+      <img src='img/palm-tree.png' alt='logo' className='LogoImg'/>
       <div className='HeaderNav'>
         {Pages.map(page => <LinkRouter to={page.to} className='TextDecoration'>{page.name}</LinkRouter>)}
       </div>
@@ -41,7 +41,7 @@ function Header() {
           <div  className='ImgP'>
             <p>Log In</p>
           </div>
-            <img src='https://w7.pngwing.com/pngs/831/88/png-transparent-user-profile-computer-icons-user-interface-mystique-miscellaneous-user-interface-design-smile.png' alt='user' className='UserImg'/>
+            <img src='img/user.png' alt='user' className='UserImg'/>
         </div>
     </div>
   )
