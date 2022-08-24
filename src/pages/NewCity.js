@@ -1,6 +1,10 @@
+import UnderConstruction from '../components/UnderConstruction.js'
+
 function newCity (){
     return(
-            <h1>New City</h1>
+        <>
+            <UnderConstruction />
+        </>
     )
 }
 
