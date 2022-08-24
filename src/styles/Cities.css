@@ -1,7 +1,14 @@
 .CitiesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .mainCities{
-    height: 71vh;
+    height: 83vh;
+}
+
+.CitiesH1{
+    font-family: 'Poppins', sans-serif, cursive;
 }
