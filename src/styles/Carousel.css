@@ -13,15 +13,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 3rem;
 }
 
 .CarouselSlide{
-    width: 90vw;
-    height: calc(100vh - 1.5rem);
+    min-width: 90vw;
+    min-height: calc(80vh - 1.5rem);
     background-color: #EEEEEE;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* background-color: red; */
 }
 
 .CarouselText, .CarouselTitle{
@@ -37,24 +39,24 @@
 }
 
 .CarouselEvent{
+    /* margin-bottom: 25px; */
     background-color: #EEEEEE;
-    width: 50%;
-    height: 50%;
+    min-width: 40vw;
+    height: 50vh;
     padding: 10px;
-    margin-bottom: 25px;
 }
 
 .CarouselImg{
     object-fit: cover;
-    height: calc(100% - 1.5rem);
+    height: calc(32vh - 1.5rem);
     width: 100%;
     margin: 0;
 }
 
 .Arrow-button{
+    /* margin-top: 10px; */
     padding: 1rem;
     height: 10%;
-    margin-top: 10px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -70,4 +72,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+
+@media (max-width: 768px){
+    .CarouselSlide{
+        display: flex;
+        /* flex-wrap: wrap; */
+    } 
+
+    .Arrow-button{
+        display: none;
+    }
+}
+
+
+@media (max-width: 425px){
+    .CarouselSlide{
+        display: flex;
+        /* flex-wrap: wrap; */
+    }
+
+    .Arrow-button{
+        display: none;
+    }
 }
