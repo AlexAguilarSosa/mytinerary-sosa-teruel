@@ -13,13 +13,14 @@
 }
 
 .CardEvent{
-    width: 1000px;
-    height: 250px;
+    width: 62rem;
+    height: 15rem;
     margin: 5vh auto;
-    background-color: blueviolet;
+    background-color: #393E46;
     display: flex;
     justify-content: center;
     z-index: -1;
+    box-shadow: 5px -5px 5px black;
 }
 
 .CardImgContainer{
@@ -40,5 +41,71 @@
 }
 
 .CardCityText{
+    color: #00ADB5;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif, cursive;
+}
 
+.CardCountryText{
+    color: #00ADB5;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif, cursive;
+}
+
+
+
+/* -----------MEDIAQUERYS----------- */
+
+@media (max-width: 768px){
+    .CardEvent{
+        width: 30rem;
+    }
+
+    .CardImg{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 425px){
+    .CardEvent{
+        width: 20rem;
+    }
+
+    .CardImg{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .CardCityText{
+        font-size: 1.2rem;
+    }
+
+    .CardCountryText{
+        font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width: 320px){
+    .CardEvent{
+        width: 15rem;
+    }
+
+    .CardImg{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .CardCityText{
+        font-size: 1.2rem;
+    }
+
+    .CardCountryText{
+        font-size: 1rem;
+    }
 }
