@@ -3,12 +3,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
 }
 
 .mainCities{
-    height: 83vh;
+    min-height: 100vh;
 }
 
 .CitiesH1{
+    margin: 15vh auto 0;
     font-family: 'Poppins', sans-serif, cursive;
 }

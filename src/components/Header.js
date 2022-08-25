@@ -2,15 +2,12 @@ import '../styles/Header.css'
 import React, { useState } from 'react'
 import {Link as LinkRouter} from  'react-router-dom'
 
-
-
 function Header() {
   let Pages = [
     {name: 'Home', to: '/'},
     {name: 'Cities', to: '/cities'},
     {name: 'New City', to: '/newcity'},
   ]
-  const navLinks = (page) => <LinkRouter> className='navbar-links menu-hover' to={page.to} key={page.name}</LinkRouter>
   
   const [open, setOpen] = useState(false)
   
