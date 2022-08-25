@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #828385b7;
 }
 
 .mainNewCity{
@@ -10,5 +11,10 @@
 }
 
 .NewCityH1{
+    width: 100%;
+    background-color: #393E46;
+    color: #00ADB5;
+    text-shadow: 3px -3px 1px #222831;
+    margin-top: 15vh;
     font-family: 'Poppins', sans-serif, cursive;
 }
