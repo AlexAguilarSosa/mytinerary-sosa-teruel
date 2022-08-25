@@ -1,5 +1,6 @@
 .HeaderContainer{
     position: fixed;
+    background-color: white;
     width: 100%;
     min-height: 10vh;
     display: flex;
@@ -15,11 +16,14 @@
 
 .TextDecoration{
     color: black;
-    text-shadow: 2px -2px 3px rgba(255, 255, 255, 0.442);
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 500;
+}
+
+.TextDecoration:hover{
+    text-decoration: underline;
 }
 
 .LogoImg{
@@ -32,7 +36,6 @@
 
 .ImgP{
     color: black;
-    text-shadow: 2px -2px 3px rgba(255, 255, 255, 0.442);
     display: flex;
     justify-content: center;
     align-items: center;
