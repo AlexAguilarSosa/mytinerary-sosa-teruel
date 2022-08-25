@@ -1,4 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .CitiesContainer{
+    background-color: #828385b7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,9 +14,14 @@
 
 .mainCities{
     min-height: 100vh;
+    z-index: 1;
 }
 
 .CitiesH1{
-    margin: 15vh auto 0;
+    width: 100%;
+    background-color: #393E46;
+    color: #00ADB5;
+    text-shadow: 3px -3px 1px #222831;
+    margin-top: 15vh;
     font-family: 'Poppins', sans-serif, cursive;
 }
