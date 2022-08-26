@@ -12,6 +12,8 @@ export default function CityCard(props) {
             <div className='CardTextContainer'>
                 <h3 className='CardCityText'>{city.city}</h3>
                 <p className='CardCountryText'>{city.country}</p>
+                <p className='CardCountryText'>Population: {city.population}</p>
+                <p className='CardCountryText'>Foundation: {city.foundation}</p>
             </div>
         </div>
     )
