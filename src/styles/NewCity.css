@@ -1,13 +1,32 @@
 .newCityContainer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #828385b7;
+    /* background-color: #828385b7; */
+    background-image: url(https://i.pinimg.com/736x/5e/b6/25/5eb625cb19e30ebb3330f4d375d2b830.jpg);
 }
 
 .mainNewCity{
     height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InputNewCityDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 20rem;
+    height: 100%;
+}
+
+.ButtonInput{
+    padding: 10px;
 }
 
 .NewCityH1{
