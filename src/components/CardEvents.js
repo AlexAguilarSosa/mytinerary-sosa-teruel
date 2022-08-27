@@ -1,6 +1,6 @@
 import React from 'react'
 import CityCard from './CityCard'
-import Input from './Input'
+// import Input from './Input'
 
 export default function CarouselEvents() {
     const cities = [
@@ -20,8 +20,7 @@ export default function CarouselEvents() {
     return (
         <>
             <CityCard data={cities} />
-            <Input data={cities} />
-            
+            {/* <Input data={cities} /> */}
         </>
 
     )
