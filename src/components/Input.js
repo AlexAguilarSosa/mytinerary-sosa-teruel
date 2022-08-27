@@ -9,15 +9,13 @@ const form = [
     {name: 'Foundation'}
 ]
 
-const inputs = (name) => <input type='text' placeholder={ name.name }></input>
+const inputs = (name) => <input type="text" placeholder={ name.name } className="InputNewCity"></input>
 
 
 function Input(props) {
-
-
     return (
         <div className='InputNewCityDiv'>
-        {form.map(inputs)}
+                {form.map(inputs)}
         <button className='ButtonInput'>Submit</button>
         </div>
     )
