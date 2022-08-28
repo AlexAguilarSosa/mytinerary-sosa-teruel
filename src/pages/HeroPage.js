@@ -10,7 +10,9 @@ export default function HeroPage() {
             <h1 className='HeroH1'>MyTinerary</h1>
             <CallToAction />
         </div>
-            <CarouselEvents />
+            <div className='CarouselContainer'>
+                <CarouselEvents />
+            </div>
         </>
     )
 }

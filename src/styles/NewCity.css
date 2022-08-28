@@ -1,13 +1,50 @@
 .newCityContainer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #828385b7;
+    /* background-color: #828385b7; */
+    background-image: url(https://i.pinimg.com/736x/5e/b6/25/5eb625cb19e30ebb3330f4d375d2b830.jpg);
 }
 
 .mainNewCity{
     height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InputNewCityDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 26rem;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: -3px -3px 5px white;
+}
+
+.InputNewCity{
+    width: 70%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #00ADB5;
+    background: none;
+    color: white;
+}
+
+.ButtonInput{
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+    background-color: #393E46;
+    color: #00ADB5;
 }
 
 .NewCityH1{

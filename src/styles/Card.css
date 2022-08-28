@@ -55,6 +55,17 @@
 
 
 /* -----------MEDIAQUERYS----------- */
+@media (max-width: 1024px){
+    .CardEvent{
+        width: 40rem;
+    }
+
+    .CardImg{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
 
 @media (max-width: 768px){
     .CardEvent{

@@ -11,7 +11,6 @@ export default function CityCard(props) {
             </div>
             <div className='CardTextContainer'>
                 <h3 className='CardCityText'>{city.city}</h3>
-                <p className='CardCountryText'>{city.country}</p>
             </div>
         </div>
     )

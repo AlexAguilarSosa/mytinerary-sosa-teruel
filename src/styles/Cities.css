@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 .CitiesContainer{
-    background-color: #828385b7;
+    /* background-color: #828385b7; */
+    background-image: url(https://i.pinimg.com/736x/5e/b6/25/5eb625cb19e30ebb3330f4d375d2b830.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
