@@ -21,12 +21,30 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    width: 20rem;
-    height: 100%;
+    width: 26rem;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: -3px -3px 5px white;
+}
+
+.InputNewCity{
+    width: 70%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #00ADB5;
+    background: none;
+    color: white;
 }
 
 .ButtonInput{
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
     padding: 10px;
+    background-color: #393E46;
+    color: #00ADB5;
 }
 
 .NewCityH1{
