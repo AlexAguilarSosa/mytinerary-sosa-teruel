@@ -6,7 +6,7 @@ function newCity (){
             <div className="newCityContainer">
                 <h1 className='NewCityH1'>New City</h1>
                 <div className="mainNewCity">
-                    <Input className='InputNewCity'/>
+                    <Input />
                 </div>
             </div>
     )
