@@ -1,10 +1,12 @@
 import React from 'react'
+import {Link as LinkRouter} from  'react-router-dom'
 import '../styles/Card.css'
 
 export default function CityCard(props) {
     const cities = props.data
 
     const CardView = (city) =>(
+    <LinkRouter to={'/UnderConstruction'} className='CityCardLink'>
         <div className='CardEvent'>
             <div className='CardImgContainer'>
                 <img className='CardImg' src={city.img} alt="" />
@@ -13,6 +15,7 @@ export default function CityCard(props) {
                 <h3 className='CardCityText'>{city.city}</h3>
             </div>
         </div>
+    </LinkRouter>
     )
 
     return (
