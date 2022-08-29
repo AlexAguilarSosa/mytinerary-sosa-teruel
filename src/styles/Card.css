@@ -9,13 +9,12 @@
     margin: 5vh auto 0;
     display: flex;
     flex-direction: column;
-    
+    gap: 5vh;
 }
 
 .CardEvent{
     width: 62rem;
     height: 15rem;
-    margin: 5vh auto;
     background-color: #393E46;
     display: flex;
     justify-content: center;
@@ -50,6 +49,10 @@
     color: #00ADB5;
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif, cursive;
+}
+
+.CityCardLink{
+    text-decoration: none;
 }
 
 
