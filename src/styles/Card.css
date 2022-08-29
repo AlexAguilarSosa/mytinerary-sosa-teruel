@@ -6,10 +6,10 @@
 
 .CardEventContainer{
     min-height: 100vh;
-    margin: 5vh auto 0;
+    margin: 8vh auto 5vh;
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 7vh;
 }
 
 .CardEvent{
@@ -19,7 +19,12 @@
     display: flex;
     justify-content: center;
     z-index: -1;
-    box-shadow: 5px -5px 5px black;
+    box-shadow: 5px 5px 8px black;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.CardEvent:hover{
+    transform: scale(1.2);
 }
 
 .CardImgContainer{
