@@ -47,7 +47,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    width: 26rem;
+    width: 30vw;
 }
 
 .InputNewCity{
@@ -71,4 +71,51 @@
     background-color: #393E46;
     color: #00ADB5;
     cursor: pointer;
+}
+
+
+
+@media (max-width:1024px){
+    .NewCityImg{
+        height: 75vh;
+        width: 45vw;
+    }
+    .InputNewCityDiv{
+        gap: 1.3rem;
+    }
+    .InputNewCity{
+        height: 6vh;
+        width: 25vw;
+    }
+    .ButtonInput{
+        padding: 7px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 425px){
+    .NewCityImg{
+        height: 30vh;
+        width: 100vw;
+    }
+    .FormImgContainer{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .MainNewCity{
+        width: 100vw;
+    }
+    .InputNewCityDiv{
+        margin: 0;
+        width: 100%;
+    }
+    .InputNewCity{
+        height: 6vh;
+        width: 55vw;
+    }
+    .ButtonInput{
+        padding: 10px;
+        font-size: 1.5rem;
+    }
 }
