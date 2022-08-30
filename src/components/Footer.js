@@ -30,10 +30,10 @@ export default function Footer() {
                         <LinkRouter to="#"><img className='FooterImg' src="/svg/facebook.svg" alt=""/></LinkRouter>
                     </div>
                 </div>
-                <div>
+                <div className='FooterPImg'>
                     <p className='FooterText'>Sosa-Teruel {fecha.getFullYear()} &copy; All Rights Reserved</p>
+                    <button onClick={ButtonToTop} className='FooterButton'><img src="/svg/upArrow.svg" alt="" /></button>
                 </div>
-                <button onClick={ButtonToTop} className='FooterButton'><img src="/svg/upArrow.svg" alt="" /></button>
             </div>
     )
 }
