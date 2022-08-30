@@ -1,50 +1,11 @@
-.newCityContainer{
+.NewCityContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* background-color: #828385b7; */
-    background-image: url(https://i.pinimg.com/736x/5e/b6/25/5eb625cb19e30ebb3330f4d375d2b830.jpg);
-}
-
-.mainNewCity{
-    height: 83vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.InputNewCityDiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 26rem;
-    height: 80%;
-    border-radius: 10px;
-    box-shadow: -3px -3px 5px white;
-}
-
-.InputNewCity{
-    width: 70%;
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 20px;
-    border-radius: 10px;
-    border-color: #00ADB5;
-    background: none;
-    color: white;
-}
-
-.ButtonInput{
-    border-radius: 10px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 10px;
-    background-color: #393E46;
-    color: #00ADB5;
+    background-color: #EEEEEE;
+    /* background-image: url(https://i.pinimg.com/736x/5e/b6/25/5eb625cb19e30ebb3330f4d375d2b830.jpg); */
 }
 
 .NewCityH1{
@@ -54,4 +15,60 @@
     text-shadow: 3px -3px 1px #222831;
     margin-top: 15vh;
     font-family: 'Poppins', sans-serif, cursive;
+}
+
+.FormImgContainer{
+    display: flex;
+}
+
+.MainNewCity{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NewCityImgContainer{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NewCityImg{
+    height: 75vh;
+}
+
+.InputNewCityDiv{
+    margin: 50px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 26rem;
+}
+
+.InputNewCity{
+    margin: 5px 0;
+    width: 70%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 5px 5px 8px rgb(66, 63, 63);
+}
+
+.ButtonInput{
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    background-color: #393E46;
+    color: #00ADB5;
+    cursor: pointer;
 }

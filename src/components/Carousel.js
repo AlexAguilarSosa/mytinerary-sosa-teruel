@@ -49,9 +49,9 @@ function Carousel(props) {
             <h2 className='CarouselTitle'>Popular MyTineraries</h2>
             <div className='CarouselSlide'>
                 <ArrowsCarousel icon={"<"} click={previous} />
-            <div className='CarouselContainerImg'>
-                {cities.slice(start, end).map(cityView)}
-            </div>
+                <div className='CarouselContainerImg'>
+                    {cities.slice(start, end).map(cityView)}
+                </div>
                 <ArrowsCarousel icon={">"} click={next} />
             </div>
         </div>
