@@ -76,6 +76,13 @@
     border-color: rgba(0, 0, 0, .1);
 }
 
+.FooterPImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 @media (max-width: 768px){
     .FooterH3, .FooterLink{
         font-size: .9rem;
@@ -89,6 +96,26 @@
         left: 90%;
         width: 40px;
         height: 40px;
+    }
+}
+
+@media(max-width:425px){
+    .FooterH3{
+        display: none;
+    }
+    .FooterImg{
+        width: 8vw;
+    }
+}
+
+@media (max-width: 375px){
+    .FooterButton{
+        width: 35px;
+        height: 35px;
+    }
+
+    .FooterText{
+        font-size: .9rem;
     }
 }
 
@@ -114,7 +141,11 @@
 
     .FooterButton{
         left: 85%;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .FooterText{
+        font-size: .7rem;
     }
 }
