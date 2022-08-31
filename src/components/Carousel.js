@@ -3,44 +3,52 @@ import ArrowsCarousel from './ArrowsCarousel'
 import { useEffect ,useState } from 'react'
 
 function Carousel(props) {
-    const cities = props.data
     const range = props.range
+    const limitSlides = (props.slides * range)
     const [start, setStart] = useState(0)
     const [end, setEnd] = useState(start + range)
     const [intervalId, setIntervalId] = useState()
+    const data = props.data
     const interval = props.interval * 1000
 
     const cityView = (city) =>(
-        <div className='CarouselEvent'>
+        <div className='CarouselEvent' key={city.city}>
             <p className='CarouselText'>{city.city}</p>
-            <img className='CarouselImg' src={city.img} alt="" />
+            <img className='CarouselImg' src={city.photo} alt="" />
         </div>
     )
 
-        useEffect(() => {
-            let id = setInterval(function () {
-                next()
-            }, interval)
+    useEffect(() => {
+        let id = setInterval(function () {
+            next()
+        }, interval)
 
-            setIntervalId(id)
+        setIntervalId(id)
 
-            return () => clearInterval(intervalId);
+        return () => clearInterval(id)
+    }, [start])
 
-        }, [start])
 
-
-        function previous (){
-            if(start >= range){
-            setStart(start - range)
-            setEnd(end - range)
+    function previous (){
+        if(start >= range){
+            setStart(start-range)
+            setEnd(end-range)
+        }else{
+            setStart(limitSlides-range)
+            setEnd(limitSlides)
         }
+        clearInterval(intervalId)
     }
 
     function next (){
-        if(end < cities.length){
-            setStart(start + range)
-            setEnd(end + range)
+        if(end < limitSlides-range){
+            setStart(start+range)
+            setEnd(end+range)
+        }else{
+            setStart(0)
+            setEnd(range)
         }
+        clearInterval(intervalId)
     }
 
 
@@ -50,7 +58,7 @@ function Carousel(props) {
             <div className='CarouselSlide'>
                 <ArrowsCarousel icon={"<"} click={previous} />
                 <div className='CarouselContainerImg'>
-                    {cities.slice(start, end).map(cityView)}
+                    {data.slice(start, end).map(cityView)}
                 </div>
                 <ArrowsCarousel icon={">"} click={next} />
             </div>
