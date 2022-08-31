@@ -6,7 +6,7 @@ export default function CityCard(props) {
     const cities = props.data
 
     const CardView = (city) =>(
-    <LinkRouter to={'/UnderConstruction'} className='CityCardLink'>
+    <LinkRouter to={'/city'} className='CityCardLink'>
         <div className='CardEvent'>
             <div className='CardImgContainer'>
                 <img className='CardImg' src={city.img} alt="" />

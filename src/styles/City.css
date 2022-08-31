@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.CityCardContainer{
+    min-height: 100vh;
+    background-color: #EEEEEE;
+    font-family: 'Poppins', sans-serif;
+}
+
+.CityCardContainerTop{
+    height: 75vh;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('/public/img/rome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 0px -300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #EEEEEE;
+    gap: 15px;
+    font-size: 30px;
+    box-shadow: 2px -3px 1px #222831;
+}
+
+.CityCardContainerBot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.CityData{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.CityBackButton{
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEEEE;
+    color: #222831;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 2px -3px 1px #222831;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 70px;
+}
+
+.CityBackButton:hover{
+    background-color: #222831;
+    color: white;
+}
