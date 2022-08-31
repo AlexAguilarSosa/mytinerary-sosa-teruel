@@ -4,6 +4,7 @@ import HeroPage from './pages/HeroPage';
 import Cities from './pages/Cities';
 import NewCity from './pages/NewCity';
 import City from './components/City';
+import EditCity from './components/EditCity';
 import UnderConstruction from './components/UnderConstruction';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='/cities' element={<Cities />} />
           <Route path='/city' element={<City />} />
           <Route path='/newcity' element={<NewCity />} />
+          <Route path='/editcity' element={<EditCity />} />
       </Routes>
     </WebsiteLayout>
   </BrowserRouter>
