@@ -1,0 +1,10 @@
+.SelectContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EditSelect{
+    background-color: black;
+    color: white;
+}
