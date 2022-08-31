@@ -6,7 +6,9 @@ const form = [
     {name: 'City'},
     {name: 'Country'},
     {name: 'Population'},
-    {name: 'Foundation'}
+    {name: 'Foundation'},
+    {name: 'Currency'},
+    {name: 'High Season'}
 ]
 
 const inputs = (name) => <input type="text" placeholder={ name.name } className="InputNewCity"></input>

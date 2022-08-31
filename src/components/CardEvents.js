@@ -11,7 +11,6 @@ export default function CarouselEvents() {
         axios.get('http://localhost:4000/cities/')
             .then(response => setCities(response.data))
     }, [])
-
     return (
         <>
             <CityCard data={cities} />
