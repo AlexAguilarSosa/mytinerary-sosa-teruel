@@ -17,6 +17,8 @@ export default function CarouselEvents() {
         { city: "Paris", country: "France", img: "/img/paris.jpg", population: '2.273.250', foundation: '52 a.C.', highseason: 'June-October', currency: 'EURO' },
         { city: "Cape Town", country: "South Africa", img: "/img/capeTown.jpg", population: '4.488.545', foundation: '1652', highseason: 'March-May/September-November', currency: 'ZAR' }
     ]
+    axios.get("http://localhost:4000/cities/")
+        .then(response => console.log(response))
     return (
         <>
             <CityCard data={cities} />
