@@ -31,7 +31,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className='FooterPImg'>
-                    <p className='FooterText'>Sosa-Teruel {fecha.getFullYear()} &copy; All Rights Reserved</p>
+                    <p className='FooterText'>TERESA {fecha.getFullYear()} &copy; All Rights Reserved</p>
                     <button onClick={ButtonToTop} className='FooterButton'><img src="/svg/upArrow.svg" alt="" /></button>
                 </div>
             </div>
