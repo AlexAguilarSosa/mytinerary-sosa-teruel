@@ -1,4 +1,5 @@
 import { useState } from "react"
+import '../styles/InputSearch.css'
 
 export default function InputSearch() {
 
@@ -9,14 +10,22 @@ export default function InputSearch() {
     //     <input type="text" name="" autoComplete='off' onChange={ev => setSearch(ev.target.value)} />
     //     
     // </form>
-    <form>
-      <select name="type" defaultValue="city">
-        <option value="city">City</option>
-        <option value="country">Country</option>
-      </select>
-      <input type="text" name="search" onChange={ev => setSearch(ev.target.value)} placeholder='Found Your Place'/>
-      <button>Search</button>
-      <p>result: {search}</p>
+    <form className="InputForm">
+      <div className="InputContainer">
+        <div>
+          <select className="InputSelect" name="type" defaultValue="city">
+            <option value="city">City</option>
+            <option value="country">Country</option>
+          </select>
+        </div>
+        <div>
+          <input autoComplete="off" className="InputSearch" type="text" name="search" onChange={ev => setSearch(ev.target.value)} placeholder='Found Your Place'/>
+        </div>
+        <div>
+          <button className="InputButton">Search</button>
+        </div>
+      </div>
+      <p className="InputText">Result: {search}</p>
     </form>
   )
 }
