@@ -1,4 +1,4 @@
-import Carousel from './Carousel'
+import Carousel from './Carousel.js'
 import axios  from 'axios'
 import { useEffect, useState } from 'react'
 
@@ -26,6 +26,6 @@ export default function CarouselEvents() {
     }, [])
 
     return (
-        <Carousel data={cities} range={4} slides={3} interval={4} />
+        <Carousel data={cities.response} range={4} slides={3} interval={4} />
     )
 }
