@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.FooterContainer{
+    margin: 0;
+    padding: 25px 0;
+    width: auto;
+    min-height: 15vh;
+    background-color: #222831;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.FooterTop{
+    display: flex;
+}
+
+.FooterNav{
+    width: 50vw;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.FooterH3{
+    color: #EEEEEE;
+}
+
+.FooterSocialLink{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.FooterImg{
+    width: 3.3vw;
+    background-color: #393E46;
+    border-radius: 360px;
+    padding: 3px;
+    margin: 0 15px;
+}
+
+.FooterText, .FooterLink{
+    text-decoration: none;
+    background-color: #393E46;
+    color: #EEEEEE;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 360px;
+    padding: 3px;
+}
+
+.FooterButton{
+    background-color: #00ADB5;
+    border: 4px solid transparent;
+    border-radius: 360px;
+    width: 60px;
+    height: 60px;
+    transition: all 300ms ease;
+    position: absolute;
+    left: 90%;
+}
+.FooterButton:hover{
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, .1);
+}
+
+.FooterPImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px){
+    .FooterH3, .FooterLink{
+        font-size: .9rem;
+    }
+
+    .FooterImg{
+        width: 5vw;
+    }
+
+    .FooterButton{
+        left: 90%;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(max-width:425px){
+    .FooterH3{
+        display: none;
+    }
+    .FooterImg{
+        width: 8vw;
+    }
+}
+
+@media (max-width: 375px){
+    .FooterButton{
+        width: 35px;
+        height: 35px;
+    }
+
+    .FooterText{
+        font-size: .9rem;
+    }
+}
+
+
+@media (max-width: 320px){
+    .FooterTop{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .FooterNav{
+        width: 100%;
+    }
+
+    .FooterSocialLink{
+        width: 100%;
+    }
+
+    .FooterImg{
+        width: 10vw;
+    }
+
+    .FooterButton{
+        left: 85%;
+        width: 35px;
+        height: 35px;
+    }
+
+    .FooterText{
+        font-size: .7rem;
+    }
+}

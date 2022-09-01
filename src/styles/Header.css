@@ -1,0 +1,100 @@
+.HeaderContainer{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.HeaderNav{
+    display: flex;
+    gap: 3rem;
+}
+
+
+
+.TextDecoration{
+    width: auto;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    box-shadow: inset 0 0 0 0 #393E46;
+    color: #000;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.TextDecoration:hover {
+    box-shadow: inset 150px 0 0 0 #393E46;
+    color: #00ADB5;
+}
+
+.LogoImg{
+    height: 10vh;
+}
+
+.UserImg{
+    height: 7vh;
+}
+
+.ImgP{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+    height: 10vh;
+}
+
+.TextDecorationBurger{
+    display: none;
+}
+
+.imgPConteiner{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+@media (max-width: 768px){
+    .TextDecorationBurger{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        border: none;
+    }
+
+    .buttonNavbar{
+        background-color: transparent;
+    }
+
+
+    .menuLinks{
+        padding: 1rem;
+        text-decoration: none;
+        font-weight: 600;
+        background-color: #393E46;
+        color: #00ADB5;
+        border-radius: 10px;
+    }
+
+    .HeaderNav{
+        display: none;
+    }
+    
+    .HeaderContainer{
+        align-items: flex-start;
+    }
+
+    .ImgP{
+        display: none;
+    }
+}

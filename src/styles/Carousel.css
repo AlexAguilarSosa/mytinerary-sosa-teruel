@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.CarouselContainer{
+    margin: 20px 0;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CarouselSlide{
+    width: 90%;
+    min-height: 80vh;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    /* background-color: red; */
+}
+
+.CarouselEvent{
+    width: 350px;
+    height: 350px;
+}
+
+
+.CarouselContainerImg{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.CarouselTitle{
+    margin: 0 0 200px 0;
+}
+
+.CarouselText, .CarouselTitle{
+    font-family: 'Poppins', sans-serif;
+    color: #00ADB5;
+    background-color: #393E46;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+    font-size: 2rem;
+    text-shadow: 3px -3px 1px #222831;
+}
+
+.CarouselImg{
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
+    margin: 0;
+}
+
+.Arrow-button{
+    /* margin-top: 10px; */
+    padding: 1rem;
+    height: 10vh;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #393E46;
+    color: white;
+    font-weight: 900;
+}
+
+
+@media (max-width: 768px){
+    .CarouselSlide{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+    .Arrow-button{
+        display: none;
+    }
+}
+
+
+@media (max-width: 425px){
+    .CarouselSlide{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Arrow-button{
+        display: none;
+    }
+}

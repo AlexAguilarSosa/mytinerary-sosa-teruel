@@ -1,0 +1,144 @@
+.NewCityContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #EEEEEE;
+    /* background-image: url(https://i.pinimg.com/736x/5e/b6/25/5eb625cb19e30ebb3330f4d375d2b830.jpg); */
+}
+
+.NewCityH1{
+    width: 100%;
+    background-color: #393E46;
+    color: #00ADB5;
+    text-shadow: 3px -3px 1px #222831;
+    margin-top: 15vh;
+    font-family: 'Poppins', sans-serif, cursive;
+}
+
+.FormImgContainer{
+    display: flex;
+}
+
+.FormNewCity{
+    margin-top: 230px;
+    height: 100%;
+    width: 100%;
+}
+
+.MainNewCity{
+    min-height: 100vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.NewCityImgContainer{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NewCityImg{
+    height: 75vh;
+}
+
+.InputNewCityDiv{
+    margin: 50px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 30vw;
+}
+
+.InputNewCity{
+    margin: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 5px 5px 8px rgb(66, 63, 63);
+}
+
+.ButtonInput{
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    background-color: #393E46;
+    color: #00ADB5;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1024px){
+    .MainNewCity{
+        width: 30vw;
+    }
+
+    .NewCityImg{
+        height: 75vh;
+        width: 45vw;
+    }
+    .InputNewCityDiv{
+        gap: 1.3rem;
+    }
+    .InputNewCity{
+        height: 6vh;
+        width: 100%;
+    }
+    .ButtonInput{
+        padding: 7px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px){
+    .MainNewCity{
+        width: 40vw;
+    }
+}
+
+
+@media (max-width: 425px){
+    .NewCityImg{
+        height: 30vh;
+        width: 100vw;
+    }
+    .FormNewCity{
+        margin-top: -100px;
+    }
+    .FormImgContainer{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .MainNewCity{
+        width: 90vw;
+    }
+    .InputNewCityDiv{
+        margin: 0;
+        width: 100%;
+    }
+    .InputNewCity{
+        height: 6vh;
+        width: 80%;
+    }
+    .ButtonInput{
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+}

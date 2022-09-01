@@ -1,0 +1,62 @@
+.InputSelectImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 30vh;
+}
+
+.InputSelectContainer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.InputNewCityDiv{
+    margin-top: 100px;
+}
+
+
+.EditCityH1{
+    width: 100%;
+    background-color: #393E46;
+    color: #00ADB5;
+    text-shadow: 3px -3px 1px #222831;
+    margin-top: 15vh;
+    font-family: 'Poppins', sans-serif, cursive;
+    text-align: center;
+}
+
+.EditSelect{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: 800;
+    border-radius: 10px;
+    margin-bottom: -50px;
+    width: 57%;
+}
+
+.OptionSelect{
+    font-weight: 800;
+}
+
+.EditCityImg{
+    margin-top: 250px;
+    height: 50vh;
+}
+
+
+@media (max-width: 1024px){
+    .EditCityImg{
+        margin-top: 200px;
+        height: 40vh;
+    }
+
+    .OptionSelect{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
