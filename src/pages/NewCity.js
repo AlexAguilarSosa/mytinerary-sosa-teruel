@@ -9,8 +9,8 @@ function NewCity (){
         City: '' ,
         country: '' ,
         photo: '' ,
-        population: 0 ,
-        foundation: 0 ,
+        population: '' ,
+        foundation: '' ,
         currency: '' ,
         highseason: ''
     }
@@ -46,11 +46,11 @@ function NewCity (){
                 <div className='FormImgContainer'>
                     <div className="MainNewCity">
                         {/* <Input /> */}
-                        <form onSubmit={saveData}>
+                        <form className='FormNewCity' onSubmit={saveData}>
                             <input
                                 type="text" 
                                 className="InputNewCity"
-                                placeholder='city'
+                                placeholder='City'
                                 required
                                 name="city" 
                                 value={city.city}
@@ -59,7 +59,7 @@ function NewCity (){
                             <input
                                 type="text" 
                                 className="InputNewCity"
-                                placeholder='country'
+                                placeholder='Country'
                                 required
                                 name="country" 
                                 value={city.country}
@@ -68,7 +68,7 @@ function NewCity (){
                             <input
                                 type="text" 
                                 className="InputNewCity"
-                                placeholder='photo'
+                                placeholder='Photo URL'
                                 required
                                 name="photo" 
                                 value={city.photo}
@@ -77,7 +77,7 @@ function NewCity (){
                             <input
                                 type="number" 
                                 className="InputNewCity"
-                                placeholder='population'
+                                placeholder='Population'
                                 required
                                 name="population" 
                                 value={city.population}
@@ -86,7 +86,7 @@ function NewCity (){
                             <input
                                 type="number" 
                                 className="InputNewCity"
-                                placeholder='foundation'
+                                placeholder='Foundation'
                                 required
                                 name="foundation" 
                                 value={city.foundation}
@@ -95,7 +95,7 @@ function NewCity (){
                             <input
                                 type="text" 
                                 className="InputNewCity"
-                                placeholder='currency'
+                                placeholder='Currency'
                                 required
                                 name="currency" 
                                 value={city.currency}
@@ -104,7 +104,7 @@ function NewCity (){
                             <input
                                 type="text" 
                                 className="InputNewCity"
-                                placeholder='highseason'
+                                placeholder='High Season'
                                 required
                                 name="highseason" 
                                 value={city.highseason}
