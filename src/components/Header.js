@@ -7,6 +7,7 @@ function Header() {
     {name: 'Home', to: '/'},
     {name: 'Cities', to: '/cities'},
     {name: 'New City', to: '/newcity'},
+    {name: 'Edit City', to: '/editcity'},
   ]
   
   const [open, setOpen] = useState(false)
