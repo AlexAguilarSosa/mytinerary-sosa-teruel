@@ -3,9 +3,6 @@ import {Link as LinkRouter} from  'react-router-dom'
 import '../styles/Card.css'
 
 export default function CityCard(props) {
-
-
-
     const cities = props.data
 
     const CardView = (city) =>(
@@ -23,7 +20,7 @@ export default function CityCard(props) {
 
     return (
         <div className='CardEventContainer'>
-            {cities.map(CardView)}
+            {cities?.map(CardView)}
         </div>
     )
 }
