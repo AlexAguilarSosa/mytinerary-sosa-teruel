@@ -10,7 +10,7 @@ function Carousel(props) {
     const [intervalId, setIntervalId] = useState()
     const data = props.data
     const interval = props.interval * 1000
-
+    console.log(data);
     const cityView = (city) =>(
         <div className='CarouselEvent' key={city.city}>
             <p className='CarouselText'>{city.city}</p>
@@ -58,7 +58,7 @@ function Carousel(props) {
             <div className='CarouselSlide'>
                 <ArrowsCarousel icon={"<"} click={previous} />
                 <div className='CarouselContainerImg'>
-                    {data.slice(start, end).map(cityView)}
+                    {data?.slice(start, end).map(cityView)}
                 </div>
                 <ArrowsCarousel icon={">"} click={next} />
             </div>
