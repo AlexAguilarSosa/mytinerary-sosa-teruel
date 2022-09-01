@@ -6,7 +6,7 @@ import NewCity from './pages/NewCity';
 import City from './components/City';
 import EditCity from './pages/EditCity';
 import UnderConstruction from './components/UnderConstruction';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
