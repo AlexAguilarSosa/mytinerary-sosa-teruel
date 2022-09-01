@@ -21,11 +21,14 @@ function Header() {
   
   return (
     <div className='HeaderContainer'>
-      <button className='buttonNavbar TextDecorationBurger' onClick={handleOpenMenu}><img className='imgBurger' src='img/menulogo.png' alt='burger'></img>
+      <button className='buttonNavbar TextDecorationBurger' onClick={handleOpenMenu}>
+        <img className='imgBurger' src='img/menulogo.png' alt='burger'></img>
       <div>
         {
           open ? <div>
-            {Pages.map(page => <LinkRouter to={page.to} className='TextDecorationBurger menuLinks'>{page.name}</LinkRouter>)}
+            {Pages.map(page => 
+              <LinkRouter to={page.to} className='TextDecorationBurger menuLinks'>{page.name}</LinkRouter>
+            )}
           </div> : null
         }
       </div>
