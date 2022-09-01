@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.InputForm{
+    margin-top: 20px;
+}
+
+.InputContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.InputSelect{
+    padding: 12px;
+    font-size: .7rem;
+    font-family: 'Poppins', sans-serif, cursive;
+    border: none;
+    border-radius: 12px;
+}
+
+.InputSearch{
+    padding: 12px;
+    font-size: .7rem;
+    font-family: 'Poppins', sans-serif, cursive;
+    border: none;
+    border-radius: 12px;
+}
+
+.InputButton{
+    padding: 12px;
+    font-size: .7rem;
+    font-family: 'Poppins', sans-serif, cursive;
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.InputText{
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif, cursive;
+}
+
+@media (max-width: 380px){
+    .InputContainer{
+        flex-direction: column;
+    }
+    
+}
