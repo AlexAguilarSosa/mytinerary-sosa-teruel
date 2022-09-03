@@ -10,20 +10,20 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-  <BrowserRouter>
-    <ScrollToTop />
-    <WebsiteLayout>
-      <Routes>
-          <Route path='/' element={<HeroPage />} />
-          <Route path='/*' element={<UnderConstruction />} />
-          <Route path='/cities' element={<Cities />} />
-          <Route path='/city' element={<City />} />
-          <Route path='/newcity' element={<NewCity />} />
-          <Route path='/editcity' element={<EditCity />} />
-      </Routes>
-    </WebsiteLayout>
-  </BrowserRouter>
-    );
+    <BrowserRouter>
+      <ScrollToTop />
+      <WebsiteLayout>
+        <Routes>
+            <Route path='/' element={<HeroPage />} />
+            <Route path='/*' element={<UnderConstruction />} />
+            <Route path='/cities' element={<Cities />} />
+            <Route path='/city/:id' element={<City />} />
+            <Route path='/newcity' element={<NewCity />} />
+            <Route path='/editcity' element={<EditCity />} />
+        </Routes>
+      </WebsiteLayout>
+    </BrowserRouter>
+  );
 }
 
 export default App;
