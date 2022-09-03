@@ -6,6 +6,7 @@ export default function Footer() {
         {name: 'Home', to: '/'},
         {name: 'Cities', to: '/cities'},
         {name: 'New City', to: '/newcity'},
+        {name: 'Edit City', to: '/editcity'},
     ]
 
     const ButtonToTop = () =>{
