@@ -1,4 +1,5 @@
 import '../styles/Carousel.css'
+import {Link as LinkRouter} from  'react-router-dom'
 import ArrowsCarousel from './ArrowsCarousel'
 import { useEffect ,useState } from 'react'
 
@@ -10,12 +11,13 @@ function Carousel(props) {
     const [intervalId, setIntervalId] = useState()
     const data = props.data
     const interval = props.interval * 1000
-    console.log(data);
     const cityView = (city) =>(
-        <div className='CarouselEvent' key={city.city}>
-            <p className='CarouselText'>{city.city}</p>
-            <img className='CarouselImg' src={city.photo} alt="" />
-        </div>
+        <LinkRouter to={`/city/${city._id}`} className='CityCardLink'>
+            <div className='CarouselEvent' key={city.city}>
+                <p className='CarouselText'>{city.city}</p>
+                <img className='CarouselImg' src={city.photo} alt="" />
+            </div>
+        </LinkRouter>
     )
 
     useEffect(() => {
